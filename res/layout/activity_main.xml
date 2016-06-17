@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.visualizerdemo.MainActivity" >
+
+    <com.visualizerdemo.Visualizer
+        android:id="@+id/visualizer"
+        android:layout_width="1130dp"
+        android:layout_height="500dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="75dp" />
+
+    <Button
+        android:id="@+id/connectBtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/visualizer"
+        android:layout_below="@+id/visualizer"
+        android:layout_marginTop="50dp"
+        android:text="@string/connect" />
+
+    <Button
+        android:id="@+id/disconnectBtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/connectBtn"
+        android:layout_alignBottom="@+id/connectBtn"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/connectBtn"
+        android:text="@string/disconnect" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/disconnectBtn"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-15dp"
+        android:layout_toRightOf="@+id/disconnectBtn"
+        android:text="@string/textview"
+        android:textSize="50sp" />
+
+</RelativeLayout>
